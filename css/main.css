@@ -182,6 +182,10 @@
 .motivation h2 {
   max-width: 1160px;
   margin: 0 auto;
+  padding-bottom: 0;
+}
+.motivation h2::before {
+  display: none;
 }
 .motivation h2 br {
   display: none;
@@ -382,6 +386,7 @@
 .module-box .name-module__text span {
   font-size: 30px;
   display: inline-block;
+  margin: 15px 0 0;
 }
 .module-box .name-module img {
   margin: 0 36px 0 0;
