@@ -10,14 +10,21 @@
 	.program-box
 		margin: 0 0 65px
 
-
 @media only screen and (max-width: 1250px)
 	.causes
 		.wrapper
 			justify-content: space-around
 
-
 @media only screen and (max-width: 1200px)
+	.reviews__list-item-inner
+		padding: 0 60px
+	.reviews__list-media
+		width: 200px
+		min-width: 200px
+		height: 200px
+	.reviews__list-text
+		font-size: 22px
+		padding-left: 30px
 
 	.steps-box
 		margin: 0 100px 0 0
@@ -36,19 +43,58 @@
 	h1
 		font-size: 105px
 
-	.steps-box
+	.list-steps
+		max-width: 535px
 		width: 100%
-		margin: 0 auto 76px
+		margin: 0 auto
+		li
+			width: 100%
+			margin: 0 0 110px
+
+	.slick-arrow
+		width: 20px
+		height: 20px
+		border-width: 2px
+	.slick-arrow.slick-prev, .slick-arrow.slick-next
+		border-radius: 0
+	.slick-dots
+		position: static
+		padding-top: 30px
+
+	.reviews
+		&__heading
+			margin-top: 0
+			text-align: center
+		&__list
+			padding-top: 60px
+		&__list-item-inner
+			-webkit-box-orient: vertical
+			-webkit-box-direction: normal
+			-ms-flex-direction: column
+			flex-direction: column
+		&__list-text
+			padding: 30px 0 0
+			font-size: 20px
+			text-align: center
+
+	.steps-box
+		font-size: 29px
+		max-width: 276px
 		.number
-			display: none
-		&::before
-			display: none
+			right: 19px
 		&:last-child
-			.box-text
-				max-width: 495px
-				margin: 0 auto
-			br
-				display: none
+			.number
+				left: 8px
+		br
+			display: none
+
+	.prices
+		.wrapper
+			flex-direction: column
+			align-items: center
+
+	.price-card
+		margin: 0 auto 64px
 
 @media only screen and (max-width: 768px)
 	.logo
@@ -75,6 +121,7 @@
 			text-align: center
 			max-width: 676px
 			letter-spacing: -0.33px
+
 			br
 				display: none
 
@@ -122,7 +169,7 @@
 			display: none
 			width: 100%
 		.d-tablet
-			display: block	
+			display: block
 
 	.slick-dots li
 		width: 20px
@@ -130,31 +177,41 @@
 
 	.causes::before
 		height: 1204px
-		top: 100px	
+		top: 100px
 
 	.causes-card
-		margin: 0 0 48px	
+		margin: 0 0 48px
 
 	.motivation h2
 		max-width: 648px
 		br
 			display: block
 		span
-			font-size: 95px	
+			font-size: 95px
 
-	.about-author 
+	.about-author
 		h3
-			max-width: 445px	
-		&:before	
+			max-width: 445px
+		&:before
 			background: url('../img/bg4-tablet.png') no-repeat center
 			background-size: 100%
 			width: 768px
 		&__photo
-			max-width: 590px	
+			max-width: 590px
 		.box-text
 			max-width: 645px
 			br
-				display: none		
+				display: none
+
+	.learn
+		&::before
+			top: -767px
+			background: url('../img/bg3-tablet.png') no-repeat center
+			background-size: 100%
+
+	.list-check
+		max-width: 640px
+		margin: 0 auto
 
 	.program
 		&::before
@@ -164,48 +221,846 @@
 			background-size: 100%
 
 	.module-box
-		padding: 77px 46px 86px 60px
+		padding: 77px 46px 56px 60px
 		.wrapper
 			flex-direction: column
-			align-items: flex-start 
+			align-items: flex-start
 
 	.module-column
 		width: 100%
 		max-width: none
 
-	.module-learn	
-						
+	.module-learn
+		margin: 0 0 30px
+		&:last-child
+			margin: 0 0 30px
 
-@media only screen and (max-width: 700px)
+	.certificate-wrapper
+		max-width: 635px
+		height: 447px
+
+	.stages-learn
+		h2
+			max-width: 390px
+		.text-description
+			margin: 0 auto 75px
+			max-width: 615px
+			br
+				display: none
+
+	.list-steps
+		max-width: 500px
+		br
+			display: none
+		li
+			margin: 0 0 67px
+			&:last-child
+				margin: 0
 
 	.steps
-		padding: 113px 0 123px
+		margin: 100px 0 75px
+
+		&::before
+			display: none
+		h2
+			padding-top: 102px
+			br
+				display: block
+			&::after
+				display: block
+
+	.prices
+		margin: 0 0 150px
+
+	.prices-description
+		margin: 20px auto 85px
+		max-width: 570px
+
+	.social h3
+		max-width: 535px
+		br
+			display: block
+
+	.list-social
+		margin: 57px auto 0
+
+	.faq
+		h2
+			max-width: 510px
+
+	.block_title
+		padding: 30px 36px 30px 46px
+		&::after
+			width: 38px
+			height: 38px
+			min-width: 38px
+
+	.block_hover
+		font-size: 29px
+		padding: 41px 36px 45px	46px
+
+@media only screen and (max-width: 700px)
+	h1
+		font-size: 90px
+
+	.program-box
+		max-width: 555px
+		padding: 234px 60px 52px
+		font-size: 24px
+		min-height: 563px
+		h3
+			font-size: 45px
+			margin: 0 0 35px
+
+	.steps-box
+		max-width: 210px
+		font-size: 22px
+		&__icon
+			height: 80px
+			img
+				max-height: 100%
+
+	.list-social
+		margin: 35px 0 0
+		li
+			margin: 0 20px 0 0
+			a
+				width: 54px
+				height: 54px
+				padding: 14px
+
+	.callback-section
+		margin: 100px 0
+
+	.faq
+		margin: 0 0 100px
+
+	.block_title
+		font-size: 18px
+		line-height: 1.14
+		padding: 20px 22px 20px 30px
+		&:after
+			width: 24px
+			height: 24px
+			min-width: 24px
+			font-size: 20px
+			padding: 3px 0 0
+
+	.block_hover
+		padding: 26px 20px 30px 30px
+
+	.motivation h2 span
+		font-size: 72.5px
+
+	footer
+		padding: 20px 0
+
+	.list-steps
+		.text-pc
+			display: none
+		.text-mobile
+			display: block
+
+@media only screen and (max-width: 576px)
+	body
+		font-size: 19px
+
+	.logo
+		max-width: 205px
+
+	header
+		padding: 38px 0 25px
+
+	.home
+		padding: 200px 0 47px
+		font-size: 20.5px
+		.box-text
+			margin: 60px auto 0
+			max-width: 425px
+			line-height: 1.1
+		&::before
+			top: 354px
+			height: 830px
+
+	h1
+		font-size: 65px
+		margin: 0 auto 25px
+
+	.date
+		margin: 0 auto 284px
+		img
+			width: 52px
+			margin: 0 15px 0 0
+
+	.subtitle
+		font-size: 24.5px
+		margin: 0 auto 17px
+
+	.slogan
+		margin: 0 auto 218px
+		max-width: 280px
+
+	.btn-group
+		.btn
+			max-width: 190px
+			margin: 0 auto 17px
+			&:last-child
+				margin: 0 auto
+
+	.btn
+		height: 43px
+		font-size: 12px
+		padding: 10px 23px
+
+	.home-image
+		max-width: 411px
+		top: 270px
+
+	h2
+		font-size: 30px
+		letter-spacing: 0.75px
+		margin: 0 auto 50px
+
+	.text-decor
+		font-size: 30px
+		letter-spacing: 0
+
+	.box-text
+		p
+			margin: 0 0 22px
+			&:last-child
+				margin: 0
+
+	.title-decor
+		padding: 67px 0
+
+	.title-decor:before, .title-decor:after
+		width: 49px
+		height: 29px
+
+	.slick-arrow
+		display: none !important
+		visibility: hidden
+
+	.causes
+		&::before
+			height: 752px
+			top: 30px
+		.wrapper
+			flex-direction: column
+			align-items: center
+
+	.causes-card
+		max-width: 253px
+		min-height: 419px
+		margin: 0 0 30px
+		padding: 32px 18px 36px
+		border-radius: 25px
+		h3
+			margin: 0 auto 26px
+			font-size: 22.5px
+		&__icon
+			height: 96px
+			margin: 0 auto 20px
+
+	.learn
+		margin: 15px auto 0
+		&::before
+			height: 1661px
+			top: auto
+			bottom: 0
+		h2
+			max-width: 430px
+
+	.list-check
+		max-width: 400px
+		font-size: 20.5px
+		letter-spacing: 0.04px
+		line-height: normal
+		li
+			margin: 0 0 20px
+			&:last-child
+				margin: 0
+			&::before
+				margin: 0 22px 0 0
+				width: 34px
+				height: 34px
+				min-width: 34px
+
+	.motivation
+		margin: 45px auto 40px
+		h2
+			max-width: 410px
+			span
+				letter-spacing: 1.49px
+				font-size: 59.5px
+
+	.about-author
+		h3
+			font-size: 30px
+			max-width: 280px
+		&::before
+			height: 1962px
+			width: 576px
+			top: -270px
+		&__photo
+			max-width: 475px
+			margin: 62px auto 0
+		.box-text
+			max-width: 418px
+			font-size: 20.5px
+
+	.program
+		margin: 46px 0 49px
+
+	.program-box
+		padding: 163px 57px 40px 38px
+		max-width: 397px
+		min-height: 403px
+		margin: 0 0 40px
+		border-radius: 25px
+		font-size: 20.5px
+		&__img
+			border-radius: 25px
+			img
+				border-radius: 25px
+		.box-text
+			font-size: 15.5px
+			line-height: 1.1
+			max-width: 255px
+		&:last-child
+			margin: 0
+		h3
+			font-size: 33px
+
+	.name-module
+		margin: 0 0 15px
+		img
+			width: 62px
+			margin: 0 15px 0 0
+
+	.program-time
+		margin: 44px auto 42px
+		font-size: 20.5px
+
+	.program-details
+		margin: 50px 0 0
+
+	.module-box
+		border-radius: 34.4px
+		padding: 49px 25px 53px 38px
+		margin: 0 auto 38px
+		&:last-child
+			margin: 0
+			.team-learn
+				display: flex
+				margin: 0
+		.team-lean
+			margin: 0
+		h3
+			margin: 0 0 27px
+		.name-module
+			margin: 0 0 32px
+			img
+				margin: 15px 20px 0 0
+			.name-module__text
+				font-size: 20.5px
+				span
+					font-size: 19px
+					line-height: 1.08
+
+	.module-learn
+		margin: 0 0 15px
+		&:last-child
+			margin: 0 0 15px
+		h4
+			margin: 0 0 12px
+		.box-text
+			max-width: 332px
+
+	.team-learn
+		font-size: 19px
+		margin: 45px 0 0
+		.box-text
+			font-size: 19px
+			max-width: 180px
+			margin: 0 0 0 17px
+		img
+			width: 22px
+
+	.certificate
+		margin: 50px 0
+		h2
+			br
+				display: block
+
+	.certificate-wrapper
+		height: 281px
+		max-width: 398px
+
+	.stages-learn
+		.text-description
+			font-size: 18px
+			margin: 0 auto 46px
+			max-width: 385px
+
+	.list-steps
+		font-size: 18px
+		max-width: 305px
+		li
+			margin: 0 0 43px
+			&:last-child
+				margin: 0
+		.number
+			width: 62px
+			height: 62px
+			min-width: 62px
+			font-size: 30px
+			margin: 0 16px 0 0
+
+	.steps
+		margin: 62px 0 46px
+		h2
+			padding-top: 67px
+
+	.steps-box
+		margin: 0 67px 0 0
+		font-size: 18px
+		max-width: 169px
+		&::before
+			width: 44px
+			right: -50px
+			top: 57px
+		&:last-child
+			margin: 0
+			.number
+				left: 0
+		&__icon
+			margin: 0 auto 36px
+			height: 63px
+		.number
+			width: 32px
+			height: 32px
+			min-width: 32px
+			font-size: 19px
+			right: 10px
+
+	.prices
+		margin: 0 0 96px
 		h2
 			max-width: 370px
 
-	.steps-box
-		margin: 0 auto 47px
-		max-width: 310px
-		&__icon
-			margin: 0 auto 35px
-			max-width: 63px
+	.price-card
+		max-width: 280px
+		min-height: 376px
+		margin: 0 auto 40px
+		padding: 40px 30px 50px
+		border-radius: 25px
+		h3
+			font-size: 22.5px
+			margin: 45px auto 40px
+			min-height: auto
+			span
+				font-size: 20.5px
+				margin: 25px auto 0
+		&:last-child
+			margin: 0 auto
+			h3
+				margin: 45px auto auto
 
-@media only screen and (max-width: 576px)
+	.price
+		font-size: 37.5px
+
+	.prices-description
+		max-width: 375px
+		margin: 14px auto 50px
+		letter-spacing: 0.04px
+		font-size: 20.5px
+
+	.social
+		h3
+			max-width: 335px
+			line-height: 1.1
+			font-size: 20.5px
+
+	.reviews
+		margin: 40px 0
+
+	.reviews__list-item-inner
+		padding: 0
+	.reviews__list-text
+		font-size: 18px
+	.reviews__list-container .slick-dots li
+		width: 20px
+		height: 20px
+
+	.faq
+		h2
+			max-width: 315px
+
+	.panel_heading
+		margin: 0 0 20px
 
 @media only screen and (max-width: 480px)
+	.home
+		&::before
+			height: 748px
+
+	.about-author
+		&::before
+			width: 480px
+			top: -378px
+		&__photo
+			margin: 24px auto 0
+			max-width: 375px
+
+	.program
+		&::before
+			height: 1657px
+			bottom: -812px
+
+	.reviews__list-text
+		font-size: 16px
+
+	.slick-dots
+		padding: 0
+
+	.reviews__list-container .slick-dots li
+		width: 16px
+		height: 16px
 
 @media only screen and (max-width: 450px)
-	.steps
-		padding: 101px 0 110px
+	body
+		font-size: 17px
+
+	.logo
+		max-width: 184px
+
+	header
+		padding: 34px 0 22px
+
+	h1
+		font-size: 58.5px
+		margin: 0 auto 19px
+
+	.home
+		padding: 178px 0 42px
+		font-size: 18.5px
+		.box-text
+			margin: 55px auto 0
+			max-width: 380px
+			letter-spacing: -0.19px
+			line-height: 1.08
+		&::before
+			top: 317px
+			height: 670px
+
+	.date
+		margin: 0 auto 254px
+		img
+			width: 47px
+			margin: 0 14px 0 0
+
+	.subtitle
+		font-size: 22px
+		margin: 0 auto 15px
+
+	.slogan
+		max-width: 250px
+		margin: 0 auto 196px
+
+	.home-image
+		max-width: 367px
+		top: 237px
+
+	.btn
+		height: 38px
+		font-size: 11px
+		padding: 10px 20px
+
+	.btn-group
+		.btn
+			max-width: 172px
+
+	h2
+		font-size: 27px
+		letter-spacing: 0.68px
+		margin: 0 auto 45px
+
+	.title-decor
+		font-size: 27px
+
+	.title-decor:before, .title-decor:after
+		width: 44px
+		height: 26px
+
+	.title-decor
+		padding: 60px 0
+
+	.causes
+		&::before
+			height: 673px
+			top: 0
+
+	.causes-card
+		border-radius: 22.4px
+		max-width: 227px
+		min-height: 376px
+		padding: 20px 17px
+		margin: 0 0 27px
+		h3
+			font-size: 20px
+			margin: 0 auto 23px
+		&__icon
+			height: 86px
+			margin: 0 auto 20px
+
+	.learn
+		margin: 13px 0 0
+		&::before
+			height: 1488px
+
+	.list-check
+		font-size: 18.5px
+		max-width: 357px
+		letter-spacing: 0.04px
+		line-height: normal
+		li
+			margin: 0 0 24px
+			&:last-child
+				margin: 0
+			&::before
+				width: 30px
+				height: 30px
+				min-width: 30px
+				margin: 0 20px 0 0
+
+	.motivation
+		margin: 40px auto
 		h2
-			max-width: 340px
+			max-width: 363px
+			span
+				letter-spacing: 1.33px
+				font-size: 53px
+
+	.about-author
+		&::before
+			width: 450px
+			height: 1758px
+			top: -339px
+		&__photo
+			max-width: 336px
+		.box-text
+			font-size: 18.5px
+			max-width: 374px
+		h3
+			max-width: 250px
+			font-size: 27px
+
+	.program
+		margin: 43px 0 0
+		&::before
+			height: 1484px
+			bottom: -727px
+
+	.program-box
+		margin: 0 auto 36px
+		max-width: 355px
+		min-height: 360px
+		padding: 153px 50px 35px 33.2px
+		border-radius: 22.4px
+		font-size: 18.5px
+		&__img
+			border-radius: 22.4px
+			img
+				border-radius: 22.4px
+		h3
+			margin: 0 0 30px
+			font-size: 29.5px
+		.box-text
+			font-size: 13.5px
+			max-width: 228px
+
+	.name-module
+		img
+			width: 56px
+			margin: 0 13px 0 0
+
+	.program-time
+		margin: 38px auto
+		font-size: 18.5px
+
+	.program-details
+		margin: 45px auto 0
+
+	.module-box
+		padding: 44px 23px 49px 32px
+		border-radius: 30.8px
+		margin: 0 auto 33px
+		&:last-child
+			margin: 0
+		h3
+			margin: 0 0 25px
+		.name-module
+			margin: 0 0 27px
+			img
+				margin: 10px 18px 0 0
+			.name-module__text
+				font-size: 18.5px
+				span
+					font-size: 17px
+					line-height: 1.09
+
+	.module-learn
+		margin: 0 0 20px
+		&:last-child
+			margin: 0 0 20px
+		h4
+			margin: 0 0 15px
+
+	.text-mobile
+		display: block
+
+	.text-pc
+		display: none
+
+	.team-learn
+		img
+			width: 20px
+		.box-text
+			font-size: 17px
+			max-width: 160px
+			line-height: 1.09
+			margin: 0 0 0 15px
+
+	.certificate
+		margin: 32px 0
+
+	.certificate-wrapper
+		height: 252px
+		max-width: 356px
+
+	.stages-learn
+		h2
+			max-width: 225px
+
+		.text-description
+			margin: 0 auto 40px
+			font-size: 16px
+			max-width: 345px
+
+	.list-steps
+		font-size: 16.5px
+		line-height: 1.12
+		max-width: 270px
+		li
+			margin: 0 0 37px
+		.number
+			width: 55px
+			height: 55px
+			min-width: 55px
+			margin: 0 15px 0 0
+			font-size: 27px
+
+	.steps
+		margin: 56px 0 32px
 
 	.steps-box
-		margin: 0 auto 40px
-		max-width: 280px
+		max-width: 156px
+		font-size: 16px
+		margin: 0 60px 0 0
+		&::before
+			top: 49px
+			width: 39px
+			height: 1px
+		.number
+			width: 28px
+			height: 28px
+			min-width: 28px
+			font-size: 17px
+			top: 33px
 		&__icon
 			margin: 0 auto 32px
 			max-width: 56px
+
+	.prices
+		margin: 0 0 86px
+
+	.price-card
+		margin: 0 auto 36px
+		max-width: 252px
+		min-height: 337px
+		padding: 42px 28px 45px
+		border-radius: 22.4px
+		h3
+			margin: 40px auto 35px
+			font-size: 20px
+			letter-spacing: 0.04px
+			span
+				font-size: 18.5px
+				letter-spacing: 0.04px
+		&:last-child
+			h3
+				margin: 40px auto auto
+
+	.btn-question
+		padding: 10px 45px
+
+	.price
+		font-size: 33.5px
+
+	.prices-description
+		margin: 47px auto
+		font-size: 18.5px
+		max-width: 345px
+		letter-spacing: 0.04px
+
+	.social h3
+		font-size: 18.5px
+
+	.list-social
+		margin: 32px 0 0
+		li
+			margin: 0 20px 0 0
+			a
+				width: 48px
+				height: 48px
+				min-width: 48px
+				padding: 12px	
+
+	.reviews
+		margin: 36px 0
+
+	.callback-section
+		margin: 70px 0
+
+	.faq
+		margin: 0 0 50px
+
+	.block_title
+		padding: 18px 20px 17px 26px
+		font-size: 16px
+		&:after
+			width: 22px
+			height: 22px
+			min-width: 22px
+
+	.block_hover
+		padding: 23px 20px 0 24px 26px
+
+@media only screen and (max-width: 370px)
+	.reviews__list-media
+		width: 160px
+		height: 160px
+		min-width: 160px
+
+	.reviews__list-text
+		font-size: 14px
+
+	.slick-dots li
+		margin: 0 10px 0 0
+		&:last-child
+			margin: 0
 
 @media only screen and (max-width: 360px)
 	.steps
@@ -219,3 +1074,29 @@
 		&__icon
 			max-width: 42px
 			margin: 0 auto 23px
+
+	.reviews
+		padding: 74px 0 40px
+		&::before
+			height: 537px
+
+	.callback-section
+		margin: 50px 0
+
+	.faq
+		margin: 0 0 60px
+
+	.panel_heading
+		margin: 0 0 20px
+
+	.block_hover
+		padding: 17px 11px 0
+
+	.block_title
+		font-size: 12px
+		padding: 11px
+		&:after
+			width: 21px
+			height: 21px
+			min-width: 21px
+			font-size: 16px

@@ -10,6 +10,7 @@
 .home .box-text {
   margin: 143px 0 0;
   letter-spacing: -0.5px;
+  line-height: 1.09;
 }
 
 .home-content {
@@ -276,6 +277,7 @@
   margin: 0 53px 73px 0;
   max-width: 634px;
   width: 100%;
+  min-height: 643px;
   border-radius: 40px;
   padding: 283px 60px 52px;
 }
@@ -379,6 +381,7 @@
 }
 .module-box .name-module__text span {
   font-size: 30px;
+  display: inline-block;
 }
 .module-box .name-module img {
   margin: 0 36px 0 0;
@@ -386,10 +389,17 @@
 .module-box:last-child {
   margin: 0;
 }
+.module-box:last-child .team-learn {
+  display: none;
+}
 .module-box .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.text-mobile {
+  display: none;
 }
 
 .module-column {
@@ -434,6 +444,9 @@
 }
 .certificate h2 {
   max-width: 915px;
+}
+.certificate h2 br {
+  display: none;
 }
 
 .certificate-wrapper {
@@ -529,6 +542,9 @@
   max-width: 1000px;
   padding-top: 0;
 }
+.steps h2 br {
+  display: none;
+}
 .steps h2::after {
   display: none;
 }
@@ -616,6 +632,7 @@
   background-size: 100%;
   max-width: 449px;
   width: 100%;
+  min-height: 601px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,6 +709,9 @@
   margin: 0 auto;
   font-weight: bold;
   text-align: center;
+}
+.social h3 br {
+  display: none;
 }
 .social .box-text {
   text-align: center;

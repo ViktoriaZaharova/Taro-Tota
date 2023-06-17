@@ -12,6 +12,7 @@
 	.box-text
 		margin: 143px 0 0
 		letter-spacing: -0.5px
+		line-height: 1.09
 
 .home-content
 	width: 100%
@@ -195,7 +196,7 @@
 	margin: 0 53px 73px 0
 	max-width: 634px
 	width: 100%
-
+	min-height: 643px
 	border-radius: 40px
 	padding: 283px 60px 52px
 	&::before
@@ -276,12 +277,19 @@
 		&__text
 			span
 				font-size: 30px
+				display: inline-block
 		img
 			margin: 0 36px 0 0
 	&:last-child
 		margin: 0
+		.team-learn
+			display: none
 	.wrapper
 		justify-content: space-between
+
+.text-mobile
+	display: none	
+
 
 .module-column
 	width: 50%
@@ -315,6 +323,8 @@
 	margin: 80px 0
 	h2
 		max-width: 915px
+		br
+			display: none
 
 .certificate-wrapper
 	margin: 0 auto
@@ -378,6 +388,8 @@
 	h2
 		max-width: 1000px
 		padding-top: 0
+		br
+			display: none
 		&::after
 			display: none
 	.wrapper
@@ -433,6 +445,7 @@
 	background-size: 100%
 	max-width: 449px
 	width: 100%
+	min-height: 601px
 	text-align: center
 	display: flex
 	flex-direction: column
@@ -488,6 +501,8 @@
 		margin: 0 auto
 		font-weight: bold
 		text-align: center
+		br
+			display: none
 	.box-text
 		text-align: center
 		line-height: 1.14
