@@ -1,0 +1,35 @@
+footer {
+  padding: 30px 0;
+  text-align: center;
+}
+footer .box-text {
+  width: 100%;
+}
+
+.list-documents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 20px auto 0;
+}
+.list-documents li {
+  margin: 0 20px 10px 0;
+}
+.list-documents li:last-child {
+  margin: 0 0 10px;
+}
+.list-documents li a {
+  color: #fff;
+}
+.list-documents li a:hover {
+  color: #d4ab3c;
+}

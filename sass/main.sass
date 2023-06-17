@@ -1,0 +1,624 @@
+@import "vars"
+
+// home
+.home
+	padding: 219px 0 77px
+	background: url('../img/home-bg.png') no-repeat right top
+	background-size: 1436px
+	position: relative
+	z-index: 1
+	font-size: 33px
+	overflow: hidden
+	.box-text
+		margin: 143px 0 0
+		letter-spacing: -0.5px
+
+.home-content
+	width: 100%
+
+.home-image
+	position: absolute
+	z-index: -1
+	right: -180px
+	top: -70px
+	@include d-flex
+
+.date
+	display: flex
+	align-items: center
+	img
+		margin: 0 25px 0 0
+
+.slogan
+	margin: 65px 0 78px
+	max-width: 450px
+	line-height: 1.09
+
+// causes
+.causes
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		width: 100%
+		height: 1382px
+		left: 0
+		top: 100px
+		background: url('../img/bg2.png') no-repeat center
+		background-size: cover
+	.wrapper
+		justify-content: space-between
+		margin: 0 auto
+
+.causes-card
+	margin: 0 0 56px
+	text-align: center
+	max-width: 403px
+	min-height: 671px
+	width: 100%
+	line-height: 1.1
+	position: relative
+	z-index: 1
+	background: url('../img/border-gradient.png') no-repeat center
+	background-size: 100%
+	border-radius: 40px
+	padding: 56px 30px 40px
+	h3
+		font-size: 36px
+		line-height: 1
+		margin: 0 0 35px
+	&__icon
+		@include d-flex
+		margin: 0 auto 40px
+		height: 140px
+		img
+			max-height: 100%
+
+// learn
+.learn
+	position: relative
+	z-index: -1
+	margin: 26px 0 0
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: -830px
+		width: 100%
+		height: 2657px
+		background: url('../img/bg3.png') no-repeat center
+		background-size: 100%
+		transform: translate(-50%,0)
+		z-index: -1
+	h2
+		max-width: 675px
+	.container
+		flex-direction: column
+		align-items: center
+
+.list-check
+	width: 100%
+	letter-spacing: 0.07px
+	li
+		width: 100%
+		margin: 0 0 27px
+		display: flex
+		align-items: center
+		&:last-child
+			margin: 0
+		&::before
+			content: ''
+			@include d-flex
+			margin: 0 47px 0 0
+			width: 55px
+			height: 55px
+			min-width: 55px
+			background: url('../img/check-icon.png') no-repeat center
+			background-size: 100%
+
+// motivation
+.motivation
+	margin: 68px 0 65px
+	h2
+		max-width: 1160px
+		margin: 0 auto
+		br
+			display: none
+		span
+			font-size: 100px
+			letter-spacing: 2.5px
+			text-transform: uppercase
+			display: block
+			.money-value
+				display: inline
+		sub
+			font-family: 'HeliosC', sans-serif
+.money-value
+	font-family: "bloomings", sans-serif
+	display: inline
+
+// about-author
+.about-author
+	position: relative
+	z-index: 0
+	&::before
+		content: ''
+		position: absolute
+		width: 1920px
+		height: 3140px
+		left: 50%
+		top: -589px
+		transform: translate(-50%,0)
+		background: url('../img/bg4.png') no-repeat center
+		background-size: 100%
+		z-index: -1
+	h3
+		font-size: 48px
+		font-family: $title-font
+		text-align: center
+		margin: 0 auto
+		max-width: 755px
+	.box-text
+		text-align: center
+		max-width: 1262px
+		margin: 0 auto
+	&__photo
+		margin: 80px auto 0
+		position: relative
+		z-index: -1
+		@include d-flex
+
+// program
+.program
+	margin: 85px 0
+	position: relative
+	z-index: 0
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		bottom: -1310px
+		left: 0
+		width: 100%
+		height: 2651px
+		background: url('../img/bg5.png') no-repeat center
+		background-size: 100%
+		z-index: -1
+	.wrapper
+		justify-content: center
+
+.program-box
+	position: relative
+	z-index: 1
+	margin: 0 53px 73px 0
+	max-width: 634px
+	width: 100%
+
+	border-radius: 40px
+	padding: 283px 60px 52px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: url('../img/border-gradient3.png') no-repeat center
+		background-size: 100%
+	&__img
+		width: 100%
+		height: 100%
+		display: flex
+		align-items: flex-start
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+		border-radius: 40px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 40px
+	&:last-child
+		margin: 0 0 73px
+	h3
+		margin: 0 0 56px
+		width: 100%
+		font-size: 52.5px
+		text-align: left
+		span
+			font-family: $default-font
+			font-weight: bold
+	.box-text
+		font-size: 24.5px
+
+.name-module
+	display: flex
+	align-items: start
+	margin: 0 0 26px
+
+	img
+		width: 99px
+		margin: 0 26px 0 0
+	&__text
+		h4
+			text-transform: uppercase
+			font-weight: bold
+
+.program-time
+	width: 100%
+	text-align: center
+	margin: 0 auto 70px
+	letter-spacing: 0.07px
+
+.btn-toggle-program
+	margin: 0 auto
+
+.program-details
+	margin: 83px 0 0
+	width: 100%
+	display: none
+
+.module-box
+	margin: 0 0 54px
+	width: 100%
+	border-radius: 55px
+	background-color: #1c191c
+	padding: 77px 70px 85px 61px
+	h3
+		text-align: left
+		margin: 0 0 40px
+	.name-module
+		margin: 0 0 80px
+		&__text
+			span
+				font-size: 30px
+		img
+			margin: 0 36px 0 0
+	&:last-child
+		margin: 0
+	.wrapper
+		justify-content: space-between
+
+.module-column
+	width: 50%
+	max-width: 594px
+	h4
+		text-transform: uppercase
+		color: #efc985
+		font-weight: bold
+		margin: 0 0 20px
+
+.module-learn
+	margin: 0 0 30px
+	line-height: 1.1
+	&:last-child
+		margin: 0
+
+.team-learn
+	display: flex
+	align-items: center
+	margin: 68px 0 0
+	.box-text
+		text-align: left
+		font-size: 30px
+		font-weight: 300
+		max-width: 270px
+		font-family: $default-font
+		margin: 0 0 0 28px
+
+// certificate
+.certificate
+	margin: 80px 0
+	h2
+		max-width: 915px
+
+.certificate-wrapper
+	margin: 0 auto
+	width: 100%
+	max-width: 868px
+	height: 614px
+	@include d-flex
+	background: #666267
+
+// stages-learn
+.stages-learn
+	.text-description
+		text-align: center
+		width: 100%
+		max-width: 1005px
+		margin: 0 auto 110px
+		background-image: linear-gradient(to right, #d4ab3c, #ffe6b0, #d29940), linear-gradient(to bottom, #cd9b54, #cd9b54)
+		-webkit-background-clip: text
+		background-clip: text
+		-webkit-text-fill-color: transparent
+
+.list-steps
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	line-height: 1.14
+	li
+		width: 50%
+		display: flex
+		align-items: center
+		margin: 0 0 104px
+
+	.number
+		@include d-flex
+		border-radius: 50%
+		margin: 0 28px 0 0
+		background-image: linear-gradient(to right, #d49d3c, #ffe0b0, #d28c40)
+		width: 98px
+		height: 98px
+		min-width: 98px
+		color: #000
+		font-size: 48px
+		font-weight: normal
+
+// steps
+.steps
+	margin: 10px 0 70px
+	position: relative
+	z-index: 0
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: -229px
+		width: 1552px
+		height: 1974px
+		background: url('../img/bg6.png') no-repeat left center
+		background-size: 100%
+		z-index: -1
+	h2
+		max-width: 1000px
+		padding-top: 0
+		&::after
+			display: none
+	.wrapper
+		justify-content: center
+
+.steps-box
+	position: relative
+	margin: 0 274px 0 0
+	line-height: 1.14
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		background-image: linear-gradient(to top, #d49d3c, #ffe0b0, #d28c40)
+		width: 310px
+		height: 2px
+		top: 60px
+		right: -290px
+	&:last-child
+		margin: 0
+		&::before
+			display: none
+		.number
+			right: auto
+			left: 30px
+	.number
+		background-image: linear-gradient(to top, #d49d3c, #ffe0b0, #d28c40)
+		width: 50px
+		height: 50px
+		@include d-flex
+		font-size: 30.5px
+		font-weight: bold
+		border-radius: 50%
+		color: #000
+		position: absolute
+		right: 30px
+		top: 40px
+	&__icon
+		margin: 0 auto 58px
+		@include d-flex
+
+// prices
+.prices
+	margin: 0 0 94px
+	.wrapper
+		justify-content: center
+
+.price-card
+	margin: 0 55px 60px 0
+	padding: 75px 50px 80px
+	border-radius: 40px
+	background: url('../img/border-gradient2.png') no-repeat center
+	background-size: 100%
+	max-width: 449px
+	width: 100%
+	text-align: center
+	display: flex
+	flex-direction: column
+	line-height: 1.14
+	.btn
+		width: 100%
+		padding: 0
+		margin: auto auto 0
+	h3
+		font-size: 36px
+		font-weight: 700
+		letter-spacing: 0.07px
+		text-transform: uppercase
+		margin: 57px 0 50px
+		min-height: 135px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		justify-content: flex-end
+		span
+			font-size: 33px
+			font-weight: 300
+			display: block
+			text-transform: none
+			margin: 36px 0 0
+	&:last-child
+		margin: 0 0 60px
+		h3
+			margin: 0 0 110px
+
+.price
+	font-size: 60px
+	font-weight: bold
+	font-family: $default-font
+	text-transform: uppercase
+
+.prices-description
+	text-align: center
+	margin: 38px auto 100px
+	max-width: 1202px
+	line-height: 1.45
+	letter-spacing: 0.07px
+
+.btn-question
+	padding: 20px 80px
+	margin: 0 auto
+	font-weight: bold
+
+// .social
+.social
+	h3
+		max-width: 740px
+		margin: 0 auto
+		font-weight: bold
+		text-align: center
+	.box-text
+		text-align: center
+		line-height: 1.14
+
+.list-social
+	margin: 92px auto 0
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	li
+		margin: 0 38px 0 0
+		&:last-child
+			margin: 0
+		a
+			width: 85px
+			height: 85px
+			background: linear-gradient(to right, #d49d3c, #ffe0b0, #d28c40)
+			border-radius: 50%
+			@include d-flex
+			&:hover
+				background: linear-gradient(to top, #d49d3c, #ffe0b0, #d28c40)
+
+// reviews
+.reviews
+	margin: 70px 0
+
+.reviews__heading
+	color: #fff
+	text-shadow: none
+	margin: 0 auto 50px
+
+.reviews__list-item-inner
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	padding: 20px 80px
+	margin: auto
+	color: #fff
+	font-size: 30px
+	width: 100%
+
+.reviews__list-media
+	width: 259px
+	min-width: 259px
+	height: 259px
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+
+.reviews__list-media-img
+	position: relative
+	border-radius: 50%
+	font-size: 0
+
+.reviews__list-media-img:after
+	content: ""
+	position: absolute
+	z-index: 2
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #fff
+
+.reviews__list-text
+	padding-left: 30px
+	font-weight: 300
+
+// callback-section
+.callback-section
+	margin: 180px 0
+	position: relative
+	z-index: 1
+
+// faq
+.faq
+	margin: 0 0 80px
+	h2
+		max-width: 900px
+
+.panel_heading
+	width: 100%
+	margin: 0 0 40px
+	&:last-child
+		margin: 0
+	&.in
+		.block_title
+			&:after
+				content: '-'
+				padding: 3px 0 0
+
+.block_title
+	width: 100%
+	display: flex
+	align-items: center
+	padding: 23px 46px
+	background: #fff
+	color: #010101
+	font-weight: normal
+	cursor: pointer
+	&:after
+		content: '+'
+		@include d-flex
+		border-radius: 50%
+		margin: 0 0 0 auto
+		width: 54px
+		height: 54px
+		min-width: 54px
+		background: #8C8C8C
+		font-size: 40px
+		color: #fff
+		line-height: 1
+		padding: 8px 0 0
+
+.block_hover
+	padding: 41px 46px 45px
+	background-image: linear-gradient(to top, #d4ab3c, #ffe6b0, #d29940), linear-gradient(to bottom, #cd9b54, #cd9b54)
+	-webkit-background-clip: text
+	background-clip: text
+	-webkit-text-fill-color: transparent
+	font-weight: 200
+	display: none
+	p
+		max-width: 980px
